@@ -28,7 +28,7 @@
   font-size: 1.8em;
 }
 
-.enter-website {
+.enter-website-button {
   z-index: 1;
   background-color: white;
   padding: 0.5em;
@@ -37,12 +37,39 @@
   font-size: 1.5em;
   border-radius: 15px;
   font-family: "Open Sans", sans-serif;
+  font-style: italic;
 }
 
 .landing-image {
-    height: 18em;
+  height: 18em;
 }
 
-.landing-image-container{
-    z-index: 1;
+.landing-image-container {
+  z-index: 1;
+}
+
+@media screen and (min-width: 1024px) {
+  .landing-div {
+    background:
+      no-repeat center / cover
+      url("../assets/Image-de-Saint-Georges-site-web.jpg");
+    gap: 4em;
+  }
+
+  .enter-website-button {
+    padding: 0.5em;
+    font-size: 2em;
+  }
+
+  .enter-website-button:hover {
+    text-decoration: underline;
+  }
+
+  .landing-title {
+    font-size: 3em;
+  }
+
+  .landing-image {
+    height: 25em;
+  }
 }
