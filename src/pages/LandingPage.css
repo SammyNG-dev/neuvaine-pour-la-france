@@ -1,0 +1,48 @@
+.landing-div {
+  display: flex;
+  flex-direction: column;
+  background:
+    no-repeat center / cover
+    url("../assets/image-de-Saint-Georges-site-web-landing-mobile.jpg");
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+}
+
+.landing-div::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  height: 100vh;
+  background-color: black;
+  opacity: 0.35;
+  pointer-events: none;
+}
+
+.landing-title {
+  color: white;
+  z-index: 1;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.8em;
+}
+
+.enter-website {
+  z-index: 1;
+  background-color: white;
+  padding: 0.5em;
+  text-decoration: none;
+  color: black;
+  font-size: 1.5em;
+  border-radius: 15px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.landing-image {
+    height: 18em;
+}
+
+.landing-image-container{
+    z-index: 1;
+}
