@@ -11,7 +11,7 @@ function LandingPage() {
       <h1 className="landing-title">
         Rejoignez-nous pour la prochaine neuvaine qui débutera le 22 mai 2026
       </h1>
-      <Link to="/" className="enter-website-button">
+      <Link to="/page" className="enter-website-button">
         Entrer sur le site
       </Link>
     </div>

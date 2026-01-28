@@ -3,12 +3,17 @@ import { createRoot } from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
 import LandingPage from "./pages/LanndingPage.tsx";
+import App from "./App.tsx";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <LandingPage />,
   },
+  {
+    path: "/page",
+    element: <App />
+  }
 ]);
 
 const rootElement = document.getElementById("root");

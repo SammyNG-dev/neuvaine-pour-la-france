@@ -1,0 +1,10 @@
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  height: 30vh;
+
+}
+
