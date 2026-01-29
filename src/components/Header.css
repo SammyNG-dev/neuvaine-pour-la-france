@@ -12,7 +12,7 @@
   height: 3.5rem;
 }
 
-.header-image {
+.header-image-background {
   background:
     no-repeat center / cover
     url("../assets/Image-de-Saint-Georges-site-web-mobile.jpg");
@@ -25,4 +25,23 @@
 .header-image-logo {
     height: 12rem;
 }
+
+@media screen and (min-width: 1024px) {
+  .header-image-background {
+    background:
+      no-repeat center / cover
+      url("../assets/Image-de-Saint-Georges-site-web.jpg");
+      background-attachment: scroll;
+      height: 50vh;
+  }
+
+  .header-image-logo {
+    height: 20rem;
+  }
+
+  .header-head-logo {
+    height: 4.5rem;
+  }
+}
+
 

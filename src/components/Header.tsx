@@ -9,7 +9,7 @@ function Header() {
         <img className="header-head-logo" src={nplf_logo} alt="Lofo de 'Neuvaine pour la France" />
         <BurgerButton />
       </div>
-      <div className="header-image">
+      <div className="header-image-background">
         <img src={nplf_logo} className="header-image-logo" alt="" />
       </div>
     </>
