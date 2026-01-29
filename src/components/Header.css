@@ -26,6 +26,10 @@
     height: 12rem;
 }
 
+.header-navbar {
+    display: none;
+}
+
 @media screen and (min-width: 1024px) {
   .header-image-background {
     background:
@@ -40,8 +44,28 @@
   }
 
   .header-head-logo {
-    height: 4.5rem;
+    height: 3.7rem;
   }
+
+  .menu-desktop {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    justify-content: space-between;
+    padding-right: 2rem;
+  }
+
+  .header-navbar {
+    display: block;
+    width: 95%;
+  }
+
+  .header-desktop-link {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.1rem;
+  }
+
+  
 }
 
 
