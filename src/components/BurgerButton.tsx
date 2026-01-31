@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./BurgerButton.css";
+import { Link } from "react-router-dom";
 
 function BurgerButton() {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,7 +21,7 @@ function BurgerButton() {
         <li>L'esprit des neuvaines</li>
         <li>Prières pour la France</li>
         <li>Citations et testaments</li>
-        <li>Groupe de prière</li>
+        <li><Link to="/page/groupe-de-priere">Groupe de prière</Link></li>
         <li>Inscription</li>
         <li>Contact</li>
       </ul>

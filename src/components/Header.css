@@ -23,11 +23,11 @@
 }
 
 .header-image-logo {
-    height: 12rem;
+  height: 12rem;
 }
 
 .header-navbar {
-    display: none;
+  display: none;
 }
 
 @media screen and (min-width: 1024px) {
@@ -35,8 +35,8 @@
     background:
       no-repeat center / cover
       url("../assets/Image-de-Saint-Georges-site-web.jpg");
-      background-attachment: scroll;
-      height: 50vh;
+    background-attachment: scroll;
+    height: 50vh;
   }
 
   .header-image-logo {
@@ -63,9 +63,11 @@
   .header-desktop-link {
     font-family: "Open Sans", sans-serif;
     font-size: 1.1rem;
+    text-decoration: none;
+    color: black;
   }
 
-  
+  .header-desktop-link:hover {
+    text-decoration: underline;
+  }
 }
-
-

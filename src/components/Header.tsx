@@ -1,6 +1,7 @@
 import nplf_logo from "../assets/Logo_neuvaine_rond_transparent.png";
 import "./Header.css";
 import BurgerButton from "./BurgerButton.tsx";
+import { Link } from "react-router-dom";
 
 function Header() {
   return (
@@ -17,7 +18,11 @@ function Header() {
             <li className="header-desktop-link">L'esprit des neuvaines</li>
             <li className="header-desktop-link">Prières pour la France</li>
             <li className="header-desktop-link">Citations et testaments</li>
-            <li className="header-desktop-link">Groupe de prière</li>
+            <li>
+              <Link className="header-desktop-link" to="/page/groupe-de-priere">
+                Groupe de prière
+              </Link>
+            </li>
             <li className="header-desktop-link">Inscription</li>
             <li className="header-desktop-link">Contact</li>
           </ul>

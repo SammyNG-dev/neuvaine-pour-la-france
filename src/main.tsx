@@ -4,6 +4,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
 import LandingPage from "./pages/LanndingPage.tsx";
 import App from "./App.tsx";
+import PrayerGroup from "./pages/PrayerGroup.tsx";
 
 const router = createBrowserRouter([
   {
@@ -12,8 +13,14 @@ const router = createBrowserRouter([
   },
   {
     path: "/page",
-    element: <App />
-  }
+    element: <App />,
+    children: [
+      {
+        path: "groupe-de-priere",
+        element: <PrayerGroup />,
+      },
+    ],
+  },
 ]);
 
 const rootElement = document.getElementById("root");
