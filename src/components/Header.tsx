@@ -1,6 +1,6 @@
 import nplf_logo from "../assets/Logo_neuvaine_rond_transparent.png";
-import "./Header.css";
 import BurgerButton from "./BurgerButton.tsx";
+import "./Header.css";
 import { Link } from "react-router-dom";
 
 function Header() {

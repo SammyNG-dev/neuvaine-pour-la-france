@@ -14,3 +14,19 @@
     flex-direction: column;
     text-align: center;
 }
+
+.fleur-de-lis {
+    width: 8rem;
+}
+
+.john-paul-ii {
+    font-weight: bold;
+}
+
+.quote-container {
+    text-align: center;
+}
+
+.john-paul-ii-quote {
+    font-size: 1rem;
+}

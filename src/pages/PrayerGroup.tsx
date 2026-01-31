@@ -1,13 +1,23 @@
 import jeanne_img from "../assets/Bannière de Sainte Jeanne d_Arc.gif";
+import fleur_de_lis from "../assets/fleur-de-lys-bleue.png";
 import "./PrayerGroup.css";
 
 function PrayerGroup() {
   return (
     <>
-      <figure className="jeanne-img-container">
+      <figure>
         <img className="jeanne-img" src={jeanne_img} alt="" />
       </figure>
       <h1>Groupe de prière Sainte Jeanne d'Arc</h1>
+      <figure>
+        <img className="fleur-de-lis" src={fleur_de_lis} alt="" />
+      </figure>
+        <blockquote className="quote-container">
+          <p className="john-paul-ii-quote">
+            France ! Qu’as-tu fait des promesses de ton baptême ?
+          </p>
+          <cite className="john-paul-ii">Saint Jean Paul II</cite>
+        </blockquote>
       <p>
         Le Groupe de prière lyonnais « Sainte Jeanne d’Arc » prie pour notre
         pays et nos compatriotes dans l’esprit des apparitions mariales de
@@ -24,12 +34,20 @@ function PrayerGroup() {
         <li>
           Une Messe mensuelle pour la France et un thème particulier au sein du
           diocèse de Lyon. Proposition de placer une messe pour un saint de
-          France (Saint Remi de Reims (15/01), Bienheureuse Isabelle de France
-          (24/02), Saint Joseph de Nazareth (19/03), Sainte Jeanne d’Arc
-          (30/05), Sainte Clothilde (04/06), Saint Jacques de Compostelle
-          (25/07), Saint Louis roi de France (25/08), Saint Michel Archange
-          (29/09), Sainte Thérèse de Lisieux (01/10), Saint Martin de Tours
-          (11/11), Immaculée Conception (08/12))
+          France :
+          <ol>
+            <li>Saint Remi de Reims (15/01)</li>
+            <li>Bienheureuse Isabelle de France (24/02)</li>
+            <li>Saint Joseph de Nazareth (19/03)</li>
+            <li>Sainte Jeanne d’Arc (30/05)</li>
+            <li>Sainte Clothilde (04/06)</li>
+            <li>Saint Louis roi de France (25/08)</li>
+            <li>Saint Jacques de Compostelle (25/07)</li>
+            <li>Saint Michel Archange (29/09)</li>
+            <li>Sainte Thérèse de Lisieux (01/10)</li>
+            <li>Saint Martin de Tours (11/11)</li>
+            <li>Immaculée Conception (08/12)</li>
+          </ol>
         </li>
         <li>
           Un Pèlerinage annuel et nocturne pour la France de Vienne à Notre-Dame

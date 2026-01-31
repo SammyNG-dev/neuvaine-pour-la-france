@@ -24,6 +24,7 @@ p {
 h1 {
   font-family: "Open Sans", sans-serif;
   font-size: 1.4rem;
+  text-align: center;
 }
 
 @media screen and (min-width: 1024px) {
