@@ -31,6 +31,10 @@
     font-size: 1rem;
 }
 
+.sacred-heart-flag {
+    height: 10rem;
+}
+
 @media screen and (min-width: 1024px) {
     .jeanne-img {
         width: 35vw;

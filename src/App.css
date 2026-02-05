@@ -31,5 +31,9 @@ h1 {
   .header {
     height: 60vh;
   }
+
+  main {
+    padding: 2rem 15rem 2rem 15rem;
+  }
 }
 

@@ -1,5 +1,6 @@
 import jeanne_img from "../assets/Bannière de Sainte Jeanne d_Arc.gif";
 import fleur_de_lis from "../assets/fleur-de-lys-bleue.png";
+import sacred_heart_flag from "../assets/drapeau-sacré-coeur.png"
 import "./PrayerGroup.css";
 
 function PrayerGroup() {
@@ -54,6 +55,9 @@ function PrayerGroup() {
           de Fourvière (le deuxième week-end de Mars).
         </li>
       </ul>
+      <figure>
+        <img className="sacred-heart-flag" src={sacred_heart_flag} alt="Drapeau tricolore frappé du Sacré-Coeur" />
+      </figure>
       <p className="for-contact">
         <span>Pour connaître les dates : contactez Bruno Vacher</span>
         <span>neuvainepourlafrance@hotmail.com</span>
