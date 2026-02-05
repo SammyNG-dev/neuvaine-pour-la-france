@@ -1,6 +1,6 @@
 import nplf_logo from "../assets/Logo_neuvaine_rond_transparent.png";
-import BurgerButton from "./BurgerButton.tsx";
 import "./Header.css";
+import BurgerButton from "./BurgerButton.tsx";
 import { Link } from "react-router-dom";
 
 function Header() {
@@ -10,7 +10,7 @@ function Header() {
         <img
           className="header-head-logo"
           src={nplf_logo}
-          alt="Lofo de 'Neuvaine pour la France"
+          alt="Logo de 'Neuvaine pour la France'"
         />
         <BurgerButton />
         <nav className="header-navbar">
