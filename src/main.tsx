@@ -5,6 +5,7 @@ import "./index.css";
 import LandingPage from "./pages/LanndingPage.tsx";
 import App from "./App.tsx";
 import PrayerGroup from "./pages/PrayerGroup.tsx";
+import NovenasSpirit from "./pages/NovenasSpirit.tsx";
 
 const router = createBrowserRouter([
   {
@@ -15,6 +16,10 @@ const router = createBrowserRouter([
     path: "/page",
     element: <App />,
     children: [
+      {
+        path: "esprit-des-neuvaines",
+        element: <NovenasSpirit />
+      },
       {
         path: "groupe-de-priere",
         element: <PrayerGroup />,

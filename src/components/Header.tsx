@@ -15,7 +15,14 @@ function Header() {
         <BurgerButton />
         <nav className="header-navbar">
           <ul className="menu-desktop">
-            <li className="header-desktop-link">L'esprit des neuvaines</li>
+            <li>
+              <Link
+                className="header-desktop-link"
+                to="/page/esprit-des-neuvaines"
+              >
+                L'esprit des neuvaines
+              </Link>
+            </li>
             <li className="header-desktop-link">Prières pour la France</li>
             <li className="header-desktop-link">Citations et testaments</li>
             <li>

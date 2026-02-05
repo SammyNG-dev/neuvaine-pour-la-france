@@ -18,10 +18,14 @@ function BurgerButton() {
         <span></span>
       </button>
       <ul className={`menu ${isOpen ? "show" : ""}`}>
-        <li>L'esprit des neuvaines</li>
+        <li>
+          <Link to="/page/esprit-des-neuvaines">L'esprit des neuvaines</Link>
+        </li>
         <li>Prières pour la France</li>
         <li>Citations et testaments</li>
-        <li><Link to="/page/groupe-de-priere">Groupe de prière</Link></li>
+        <li>
+          <Link to="/page/groupe-de-priere">Groupe de prière</Link>
+        </li>
         <li>Inscription</li>
         <li>Contact</li>
       </ul>
