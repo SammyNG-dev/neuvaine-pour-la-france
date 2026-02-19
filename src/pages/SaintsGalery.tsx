@@ -1,3 +1,5 @@
+import SaintCard from "../components/SaintCard";
+
 type SaintType = {
   id: number;
   name: string;
@@ -13,9 +15,7 @@ const saint: SaintType = {
 function SaintsGalery() {
   return (
     <>
-      <h1>Les saints patrons de France</h1>
-      <h2>{saint.name}</h2>
-      <p>{saint.prayer}</p>
+      <SaintCard />
     </>
   );
 }
