@@ -1,16 +1,14 @@
-type SaintType = {
+type SaintsType = {
   id: number;
   name: string;
   prayer: string;
 };
 
-const saint: SaintType = {
-  id: 1,
-  name: "Saint Anselme",
-  prayer: "Seigneur, aide-moi",
-};
+type SaintsTypeProps = {
+    saint: SaintsType
+}
 
-function SaintCard() {
+function SaintCard({ saint }: SaintsTypeProps) {
   return (
     <>
       <h1>{saint.name}</h1>
