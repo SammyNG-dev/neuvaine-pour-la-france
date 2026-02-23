@@ -1,0 +1,30 @@
+.saint-card {
+  width: 20rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  background-color: #dfd4c0;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.saint-image {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+.saint-button {
+  text-decoration: none;
+  background-color: white;
+  color: black;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.saint-button:last-child {
+    margin-bottom: 2em;
+}
+
+.saint-name {
+    text-align: center;
+}
