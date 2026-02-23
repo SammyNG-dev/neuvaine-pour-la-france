@@ -1,8 +1,8 @@
 import { createContext, useContext } from "react";
-import martin_image_galery from "../assets/Saint-Martin-de-Tours-galery.jpg"
-import therese_image_galery from "../assets/Sainte-Thérèse-galerie.jpg"
-import remi_image_galery from "../assets/saint-remi-baptise-clovis-galery.webp"
-import louis_image_galery from "../assets/saint-louis-galerie.webp"
+import martin_image_galery from "../assets/Saint-Martin-de-Tours-galery.jpg";
+import therese_image_galery from "../assets/Sainte-Thérèse-galerie.jpg";
+import remi_image_galery from "../assets/saint-remi-baptise-clovis-galery.webp";
+import louis_image_galery from "../assets/saint-louis-galerie.webp";
 
 const SaintsContext = createContext<SaintsContextType | null>(null);
 
@@ -67,7 +67,7 @@ const saintsData: Saint[] = [
         id: 1,
         title:
           "Prière de Sainte Thérèse de Lisieux à Sainte Jeanne d’Arc pour la France.",
-        text: "« O Jeanne, souviens-toi que tu sauvas la France »\n\nChant de la France au loin :\n\n« Rappelle-toi, Jeanne, de ta patrie ! Rappelle-toi de tes valons en fleurs ! Rappelle-toi la riante prairie que tu quittas pour essuyer mes pleurs !\nÔ Jeanne ! Souviens-toi que tu sauvas la France, comme un ange des cieux tu guéris ma souffrance, écoute dans la nuit, la France qui gémit. Rappelle-toi !\nRappelle-toi, Jeanne de tes victoires, rappelle-toi de Reims et d’Orléans, rappelle-toi que tu couvris de gloire, au nom du royaume de Dieu, le royaume des Francs !\nMaintenant, loin de toi, je souffre et je soupire, daigne encor me sauver ! Jeanne, douce Martyre ! Oh ! Viens briser mes fers !\nDes maux que j’ai soufferts, rappelle-toi ! »\n\nRéponse de Sainte Jeanne d’Arc :\n\n« Ô France ! Ô ma belle patrie ! Il faut t’élever jusqu’aux Cieux, si tu veux retrouver la vie, et que ton nom soit glorieux.\nLe Dieu des Francs dans sa clémence a résolu de te sauver mais c’est par moi, Jeanne de France, qu’il veut encor te racheter\nViens à moi, Patrie si belle. Je prie pour toi, ma voix t’appelle, reviens à moi. »\nAinsi soit-il.",
+        text: "« O Jeanne, souviens-toi que tu sauvas la France »\nChant de la France au loin :\n« Rappelle-toi, Jeanne, de ta patrie ! Rappelle-toi de tes valons en fleurs ! Rappelle-toi la riante prairie que tu quittas pour essuyer mes pleurs !\nÔ Jeanne ! Souviens-toi que tu sauvas la France, comme un ange des cieux tu guéris ma souffrance, écoute dans la nuit, la France qui gémit. Rappelle-toi !\nRappelle-toi, Jeanne de tes victoires, rappelle-toi de Reims et d’Orléans, rappelle-toi que tu couvris de gloire, au nom du royaume de Dieu, le royaume des Francs !\nMaintenant, loin de toi, je souffre et je soupire, daigne encor me sauver ! Jeanne, douce Martyre ! Oh ! Viens briser mes fers !\nDes maux que j’ai soufferts, rappelle-toi ! »\nRéponse de Sainte Jeanne d’Arc :\n« Ô France ! Ô ma belle patrie ! Il faut t’élever jusqu’aux Cieux, si tu veux retrouver la vie, et que ton nom soit glorieux.\nLe Dieu des Francs dans sa clémence a résolu de te sauver mais c’est par moi, Jeanne de France, qu’il veut encor te racheter\nViens à moi, Patrie si belle. Je prie pour toi, ma voix t’appelle, reviens à moi. »\nAinsi soit-il.",
       },
     ],
     testament: null,
@@ -89,9 +89,7 @@ export const SaintsContextProvider = ({
 export const useSaints = () => {
   const value = useContext(SaintsContext);
   if (!value) {
-    throw new Error(
-      "useSaints must be used within a <SaintsContextProvider>",
-    );
+    throw new Error("useSaints must be used within a <SaintsContextProvider>");
   }
 
   return value;

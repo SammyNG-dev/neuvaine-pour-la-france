@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 type SaintType = {
   id: number;
   name: string;
-  img: string | null;
+  img_galery: string | null
 };
 
 type SaintTypeProps = {
@@ -14,8 +14,8 @@ type SaintTypeProps = {
 function SaintCard({ saint }: SaintTypeProps) {
   return (
     <div className="saint-card">
-      {saint.img ? (
-        <img className="saint-image" src={saint.img} alt={saint.name} />
+      {saint.img_galery ? (
+        <img className="saint-image" src={saint.img_galery} alt={saint.name} />
       ) : null}
       <h3 className="saint-name">{saint.name}</h3>
       <Link className="saint-button" to={`/page/prières-pour-la-france/${saint.id}`}>Prières pour la France</Link>

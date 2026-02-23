@@ -7,6 +7,7 @@ import App from "./App.tsx";
 import PrayerGroup from "./pages/PrayerGroup.tsx";
 import NovenasSpirit from "./pages/NovenasSpirit.tsx";
 import SaintsGalery from "./pages/SaintsGalery.tsx";
+import { SaintsContextProvider } from "./contexts/SaintsContext.tsx";
 
 const router = createBrowserRouter([
   {
@@ -40,7 +41,9 @@ if (rootElement === null) {
 }
 
 createRoot(rootElement).render(
-  <StrictMode>
-    <RouterProvider router={router} />
-  </StrictMode>,
+  <SaintsContextProvider>
+    <StrictMode>
+      <RouterProvider router={router} />
+    </StrictMode>
+  </SaintsContextProvider>,
 );
