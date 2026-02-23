@@ -1,4 +1,8 @@
 import { createContext, useContext } from "react";
+import martin_image_galery from "../assets/Saint-Martin-de-Tours-galery.jpg"
+import therese_image_galery from "../assets/Sainte-Thérèse-galerie.jpg"
+import remi_image_galery from "../assets/saint-remi-baptise-clovis-galery.webp"
+import louis_image_galery from "../assets/saint-louis-galerie.webp"
 
 const SaintsContext = createContext<SaintsContextType | null>(null);
 
@@ -11,6 +15,7 @@ type Prayer = {
 type Saint = {
   id: number;
   name: string;
+  img_galery: string;
   prayers: Prayer[] | null;
   testament: string | null;
 };
@@ -23,12 +28,14 @@ const saintsData: Saint[] = [
   {
     id: 1,
     name: "Saint Rémi de Reims.",
+    img_galery: remi_image_galery,
     prayers: null,
     testament: null,
   },
   {
     id: 2,
     name: "Saint Martin de Tours",
+    img_galery: martin_image_galery,
     prayers: [
       {
         id: 1,
@@ -41,6 +48,7 @@ const saintsData: Saint[] = [
   {
     id: 3,
     name: "Saint Louis, Roi de France.",
+    img_galery: louis_image_galery,
     prayers: [
       {
         id: 1,
@@ -53,6 +61,7 @@ const saintsData: Saint[] = [
   {
     id: 3,
     name: "Sainte Thérèse de Lisieux",
+    img_galery: therese_image_galery,
     prayers: [
       {
         id: 1,
