@@ -18,6 +18,7 @@ type Saint = {
   img_galery: string;
   prayers: Prayer[] | null;
   testament: string | null;
+  quotes: string[] | null;
 };
 
 type SaintsContextType = {
@@ -31,6 +32,7 @@ const saintsData: Saint[] = [
     img_galery: remi_image_galery,
     prayers: null,
     testament: null,
+    quotes: ["Le Seigneur est mon berger"],
   },
   {
     id: 2,
@@ -44,6 +46,7 @@ const saintsData: Saint[] = [
       },
     ],
     testament: null,
+    quotes: null,
   },
   {
     id: 3,
@@ -57,6 +60,7 @@ const saintsData: Saint[] = [
       },
     ],
     testament: null,
+    quotes: null,
   },
   {
     id: 3,
@@ -71,6 +75,7 @@ const saintsData: Saint[] = [
       },
     ],
     testament: null,
+    quotes: null,
   },
 ];
 

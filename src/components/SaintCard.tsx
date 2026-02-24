@@ -4,7 +4,10 @@ import { Link } from "react-router-dom";
 type SaintType = {
   id: number;
   name: string;
-  img_galery: string | null
+  img_galery: string | null;
+  prayers: string | null;
+  quotes: string[] | null;
+  testament: string | null;
 };
 
 type SaintTypeProps = {
@@ -18,8 +21,22 @@ function SaintCard({ saint }: SaintTypeProps) {
         <img className="saint-image" src={saint.img_galery} alt={saint.name} />
       ) : null}
       <h3 className="saint-name">{saint.name}</h3>
-      <Link className="saint-button" to={`/page/prières-pour-la-france/${saint.id}`}>Prières pour la France</Link>
-      <Link className="saint-button" to={`/page/citations-et-testaments/${saint.id}`}>Citations et Testament</Link>
+      {saint.prayers && (
+        <Link
+          className="saint-button"
+          to={`/page/prières-pour-la-france/${saint.id}`}
+        >
+          Prières pour la France
+        </Link>
+      )}
+      {saint.quotes || saint.testament ? (
+        <Link
+          className="saint-button"
+          to={`/page/citations-et-testaments/${saint.id}`}
+        >
+          Citations et Testament
+        </Link>
+      ) : null}
     </div>
   );
 }
