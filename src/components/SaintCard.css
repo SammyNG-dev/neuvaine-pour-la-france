@@ -1,8 +1,8 @@
 .saint-card {
-  width: 20rem;
+  width: 18rem;
   display: flex;
   flex-direction: column;
-  gap: 2em;
+  gap: 2rem;
   background-color: #dfd4c0;
   align-items: center;
   border-radius: 10px;
@@ -19,12 +19,19 @@
   color: black;
   padding: 1rem;
   border-radius: 10px;
+  font-size: 1.2rem;
 }
 
 .saint-button:last-child {
-    margin-bottom: 2em;
+  margin-bottom: 2rem;
 }
 
 .saint-name {
-    text-align: center;
+  text-align: center;
+}
+
+@media screen and (min-width: 1024px) {
+  .saint-card {
+    width: 30rem;
+  }
 }

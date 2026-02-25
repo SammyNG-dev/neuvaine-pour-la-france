@@ -1,11 +1,17 @@
 import "./SaintCard.css";
 import { Link } from "react-router-dom";
 
+type Prayer = {
+  id: number;
+  title: string;
+  text: string;
+};
+
 type SaintType = {
   id: number;
   name: string;
-  img_galery: string | null;
-  prayers: string | null;
+  img_galery: string;
+  prayers: Prayer[] | null;
   quotes: string[] | null;
   testament: string | null;
 };
@@ -17,10 +23,8 @@ type SaintTypeProps = {
 function SaintCard({ saint }: SaintTypeProps) {
   return (
     <div className="saint-card">
-      {saint.img_galery ? (
-        <img className="saint-image" src={saint.img_galery} alt={saint.name} />
-      ) : null}
-      <h3 className="saint-name">{saint.name}</h3>
+      <img className="saint-image" src={saint.img_galery} alt={saint.name} />
+      <h2 className="saint-name">{saint.name}</h2>
       {saint.prayers && (
         <Link
           className="saint-button"
