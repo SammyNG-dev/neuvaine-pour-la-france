@@ -28,7 +28,7 @@ function SaintCard({ saint }: SaintTypeProps) {
       {saint.prayers && (
         <Link
           className="saint-button"
-          to={`/page/prières-pour-la-france/${saint.id}`}
+          to={`/page/prieres-pour-la-france/${saint.id}`}
         >
           Prières pour la France
         </Link>
