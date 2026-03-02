@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom";
 import { useSaints } from "../contexts/SaintsContext";
 import React from "react";
+import "./PrayersFoFrance.css"
 
 function PrayersForFrance() {
   const { id } = useParams<string>();
@@ -14,6 +15,7 @@ function PrayersForFrance() {
   return (
     <>
       <h1>{saint?.name}</h1>
+      <img className="saint-prayer-image" src={saint?.img} alt={saint?.name} />
       {saint?.prayers?.map((p) => {
         const pSplitted = p.text.split("\n");
         return (
