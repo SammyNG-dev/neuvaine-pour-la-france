@@ -1,9 +1,13 @@
 import "./NovenasSpirit.css";
+import priere_remi from "../assets/priere-de-saint-remi-pour-la-france.png"
 
 function NovenasSpirit() {
   return (
     <>
       <h1>L'esprit des neuvaines</h1>
+      <figure>
+        <img src={priere_remi} alt="" />
+      </figure>
       <p>
         Accroître en nous des liens d’amitié avec notre pays et ces saints :
         telle est l’idée à l’origine de cette neuvaine. Oui, chers amis, il faut
@@ -28,7 +32,7 @@ function NovenasSpirit() {
         réunit par nos attachements autant qu’ils nous élèvent par nos
         aspirations. C’est notre sanctification par la prière (la prière commune
         de l’assemblée des fidèles, l’ecclesia, qui est l’Eglise). C’est la foi
-        en marche : pour obtenir les grâces dont notre pays a besoin, dont notre
+        en route : pour obtenir les grâces dont notre pays a besoin, dont notre
         société, nos familles et nous-mêmes avons besoin.  Le thème de la
         neuvaine est tout entier inscrite dans son nom : Neuvaine pour la
         France, « Cette grande France ». La France avec cette histoire sainte.
@@ -51,7 +55,9 @@ function NovenasSpirit() {
       </p>
       <div className="novenas-pillars">
         <span>Mission</span>
+        <span>-</span>
         <span>Tradition</span>
+        <span>-</span>
         <span>Histoire</span>
       </div>
       <p>
