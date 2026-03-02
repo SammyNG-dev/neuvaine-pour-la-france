@@ -1,8 +1,8 @@
 import { createContext, useContext } from "react";
-import martin_image_galery from "../assets/Saint-Martin-de-Tours-galery.jpg";
+import martin_image_galery from "../assets/Saint-Martin-de-Tours-galery.jpeg"
 import therese_image_galery from "../assets/Sainte-Thérèse-galerie.jpg";
-import remi_image_galery from "../assets/saint-remi-baptise-clovis-galery.webp";
-import louis_image_galery from "../assets/saint-louis-galerie.webp";
+import remi_image_galery from "../assets/saint-remi-baptise-clovis-galery.png";
+import louis_image_galery from "../assets/saint-louis-galerie.jpeg";
 
 const SaintsContext = createContext<SaintsContextType | null>(null);
 
