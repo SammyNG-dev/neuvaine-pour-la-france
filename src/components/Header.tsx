@@ -23,8 +23,11 @@ function Header() {
                 L'esprit des neuvaines
               </Link>
             </li>
-            <li className="header-desktop-link">Prières pour la France</li>
-            <li className="header-desktop-link">Citations et testaments</li>
+            <li>
+              <Link className="header-desktop-link" to="/page/saints-de-france">
+                Saints de France
+              </Link>
+            </li>
             <li>
               <Link className="header-desktop-link" to="/page/groupe-de-priere">
                 Groupe de prière

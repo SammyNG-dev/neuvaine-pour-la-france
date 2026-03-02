@@ -27,7 +27,7 @@ const router = createBrowserRouter([
         element: <PrayerGroup />,
       },
       {
-        path: "saints-patrons-de-france",
+        path: "saints-de-france",
         element: <SaintsGalery />,
       },
     ],

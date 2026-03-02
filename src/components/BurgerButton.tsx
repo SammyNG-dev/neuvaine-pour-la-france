@@ -21,8 +21,9 @@ function BurgerButton() {
         <li>
           <Link to="/page/esprit-des-neuvaines">L'esprit des neuvaines</Link>
         </li>
-        <li>Prières pour la France</li>
-        <li>Citations et testaments</li>
+        <li>
+          <Link to="/page/saints-de-france">Saints de France</Link>
+        </li>
         <li>
           <Link to="/page/groupe-de-priere">Groupe de prière</Link>
         </li>
