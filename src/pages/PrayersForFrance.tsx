@@ -1,30 +1,36 @@
 import { useParams } from "react-router-dom";
-
-type Obj = {
-  id: number;
-  name: string;
-};
-
-const objects: Obj[] = [
-  {
-    id: 1,
-    name: "fourchette",
-  },
-  {
-    id: 2,
-    name: "couteau",
-  },
-];
+import { useSaints } from "../contexts/SaintsContext";
+import React from "react";
 
 function PrayersForFrance() {
   const { id } = useParams<string>();
+  const { saintsData } = useSaints();
 
   if (!id) {
     return <h1>ID Invalide</h1>;
   }
-  const object = objects.find((o) => o.id === Number.parseInt(id, 10));
+  const saint = saintsData.find((s) => s.id === Number.parseInt(id, 10));
 
-  return <p>{`Coucou ${id}, salut ${object ? object.name : undefined}`}</p>;
+  return (
+    <>
+      <h1>{saint?.name}</h1>
+      {saint?.prayers?.map((p) => {
+        const pSplitted = p.text.split("\n");
+        return (
+          <>
+            <h2>{p.title}</h2>
+            {pSplitted.map((line) => {
+              return (
+                <React.Fragment key={line}>
+                  <p>{line}</p>
+                </React.Fragment>
+              );
+            })}
+          </>
+        );
+      })}
+    </>
+  );
 }
 
 export default PrayersForFrance;

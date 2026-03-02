@@ -1,5 +1,5 @@
 import { createContext, useContext } from "react";
-import martin_image_galery from "../assets/Saint-Martin-de-Tours-galery.jpeg"
+import martin_image_galery from "../assets/Saint-Martin-de-Tours-galery.jpeg";
 import therese_image_galery from "../assets/Sainte-Thérèse-galerie.jpg";
 import remi_image_galery from "../assets/saint-remi-baptise-clovis-galery.png";
 import louis_image_galery from "../assets/saint-louis-galerie.jpeg";
@@ -63,7 +63,7 @@ const saintsData: Saint[] = [
     quotes: null,
   },
   {
-    id: 3,
+    id: 4,
     name: "Sainte Thérèse de Lisieux",
     img_galery: therese_image_galery,
     prayers: [
