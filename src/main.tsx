@@ -37,7 +37,7 @@ const router = createBrowserRouter([
         element: <PrayersForFrance />,
       },
       {
-        path: "citations-et-testaments/",
+        path: "citations-et-testaments/:id",
         element: <QuotesAndTestaments />,
       },
     ],

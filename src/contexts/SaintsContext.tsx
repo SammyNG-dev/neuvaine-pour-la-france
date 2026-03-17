@@ -41,7 +41,7 @@ const saintsData: Saint[] = [
     img_galery: remi_image_galery,
     img: remi_big,
     prayers: null,
-    testament: null,
+    testament: "Au nom du Père, du Fils et du Saint Esprit",
     quotes: ["Le Seigneur est mon berger"],
   },
   {
