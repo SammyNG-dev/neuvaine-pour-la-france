@@ -10,7 +10,7 @@ import louis_big from "../assets/saint-louis-big.jpeg";
 import jeanne_big from "../assets/sainte-jeanne-big.jpeg";
 import jeanne_galery from "../assets/sainte-jeanned-arc-galery.jpeg";
 import esprit_saint_galery from "../assets/esprit-saint-vitrail-galery.jpg";
-import esprit_saint_big from "../assets/esprit-saint-vitrail.jpg"
+import esprit_saint_big from "../assets/esprit-saint-vitrail.jpg";
 
 const SaintsContext = createContext<SaintsContextType | null>(null);
 
@@ -23,8 +23,8 @@ type Prayer = {
 type Saint = {
   id: number;
   name: string;
-  img_galery: string | null;
-  img?: string
+  img_galery: string;
+  img: string;
   prayers: Prayer[] | null;
   testament: string | null;
   quotes: string[] | null;

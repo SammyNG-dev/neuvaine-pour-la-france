@@ -9,6 +9,7 @@ import NovenasSpirit from "./pages/NovenasSpirit.tsx";
 import SaintsGalery from "./pages/SaintsGalery.tsx";
 import { SaintsContextProvider } from "./contexts/SaintsContext.tsx";
 import PrayersForFrance from "./pages/PrayersForFrance.tsx";
+import QuotesAndTestaments from "./pages/QuotesAndTestaments.tsx";
 
 const router = createBrowserRouter([
   {
@@ -34,6 +35,10 @@ const router = createBrowserRouter([
       {
         path: "prieres-pour-la-france/:id",
         element: <PrayersForFrance />,
+      },
+      {
+        path: "citations-et-testaments/",
+        element: <QuotesAndTestaments />,
       },
     ],
   },

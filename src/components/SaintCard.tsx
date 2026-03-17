@@ -10,7 +10,7 @@ type Prayer = {
 type SaintType = {
   id: number;
   name: string;
-  img_galery: string;
+  img_galery: string
   prayers: Prayer[] | null;
   quotes: string[] | null;
   testament: string | null;
