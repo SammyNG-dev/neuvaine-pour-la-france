@@ -9,6 +9,8 @@ import martin_big from "../assets/saint-martin-big.jpeg";
 import louis_big from "../assets/saint-louis-big.jpeg";
 import jeanne_big from "../assets/sainte-jeanne-big.jpeg";
 import jeanne_galery from "../assets/sainte-jeanned-arc-galery.jpeg";
+import esprit_saint_galery from "../assets/esprit-saint-vitrail-galery.jpg";
+import esprit_saint_big from "../assets/esprit-saint-vitrail.jpg"
 
 const SaintsContext = createContext<SaintsContextType | null>(null);
 
@@ -22,7 +24,7 @@ type Saint = {
   id: number;
   name: string;
   img_galery: string | null;
-  img?: string;
+  img?: string
   prayers: Prayer[] | null;
   testament: string | null;
   quotes: string[] | null;
@@ -98,6 +100,21 @@ const saintsData: Saint[] = [
         title:
           "Prière de Sainte Thérèse de Lisieux à Sainte Jeanne d’Arc pour la France.",
         text: "« O Jeanne, souviens-toi que tu sauvas la France »\nChant de la France au loin :\n« Rappelle-toi, Jeanne, de ta patrie ! Rappelle-toi de tes valons en fleurs ! Rappelle-toi la riante prairie que tu quittas pour essuyer mes pleurs !\nÔ Jeanne ! Souviens-toi que tu sauvas la France, comme un ange des cieux tu guéris ma souffrance, écoute dans la nuit, la France qui gémit. Rappelle-toi !\nRappelle-toi, Jeanne de tes victoires, rappelle-toi de Reims et d’Orléans, rappelle-toi que tu couvris de gloire, au nom du royaume de Dieu, le royaume des Francs !\nMaintenant, loin de toi, je souffre et je soupire, daigne encor me sauver ! Jeanne, douce Martyre ! Oh ! Viens briser mes fers !\nDes maux que j’ai soufferts, rappelle-toi ! »\nRéponse de Sainte Jeanne d’Arc :\n« Ô France ! Ô ma belle patrie ! Il faut t’élever jusqu’aux Cieux, si tu veux retrouver la vie, et que ton nom soit glorieux.\nLe Dieu des Francs dans sa clémence a résolu de te sauver mais c’est par moi, Jeanne de France, qu’il veut encor te racheter\nViens à moi, Patrie si belle. Je prie pour toi, ma voix t’appelle, reviens à moi. »\nAinsi soit-il.",
+      },
+    ],
+    testament: null,
+    quotes: null,
+  },
+  {
+    id: 6,
+    name: "Autres prières",
+    img_galery: esprit_saint_galery,
+    img: esprit_saint_big,
+    prayers: [
+      {
+        id: 1,
+        title: "Prière de Saint...",
+        text: "Seigneur, protège moi",
       },
     ],
     testament: null,
