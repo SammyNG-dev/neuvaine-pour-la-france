@@ -11,6 +11,7 @@ import jeanne_big from "../assets/sainte-jeanne-big.jpeg";
 import jeanne_galery from "../assets/sainte-jeanned-arc-galery.jpeg";
 import esprit_saint_galery from "../assets/esprit-saint-vitrail-galery.jpg";
 import esprit_saint_big from "../assets/esprit-saint-vitrail.jpg";
+import { saintRemiTestament } from "../content/testaments.ts";
 
 const SaintsContext = createContext<SaintsContextType | null>(null);
 
@@ -41,7 +42,7 @@ const saintsData: Saint[] = [
     img_galery: remi_image_galery,
     img: remi_big,
     prayers: null,
-    testament: "Au nom du Père, du Fils et du Saint Esprit",
+    testament: saintRemiTestament,
     quotes: ["Le Seigneur est mon berger"],
   },
   {
