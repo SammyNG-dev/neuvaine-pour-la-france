@@ -2,12 +2,12 @@ import SaintCard from "../components/SaintCard";
 import { useSaints } from "../contexts/SaintsContext";
 
 function SaintsGalery() {
-  const { saintsData } = useSaints();
+  const { enrichiedSaintsData } = useSaints();
 
   return (
     <>
       <h1 className="saints-galery-title">Saints de France</h1>
-      {saintsData.map((saint) => {
+      {enrichiedSaintsData.map((saint) => {
         return <SaintCard key={saint.id} saint={saint} />;
       })}
     </>

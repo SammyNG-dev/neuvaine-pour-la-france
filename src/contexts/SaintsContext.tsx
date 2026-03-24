@@ -11,7 +11,7 @@ import jeanne_big from "../assets/sainte-jeanne-big.jpeg";
 import jeanne_galery from "../assets/sainte-jeanned-arc-galery.jpeg";
 import esprit_saint_galery from "../assets/esprit-saint-vitrail-galery.jpg";
 import esprit_saint_big from "../assets/esprit-saint-vitrail.jpg";
-import { saintRemiTestament } from "../content/testaments.ts";
+import { testamentsParsed } from "../utils/parseText.ts";
 
 const SaintsContext = createContext<SaintsContextType | null>(null);
 
@@ -21,18 +21,24 @@ type Prayer = {
   text: string;
 };
 
+type Testament = {
+  id: number;
+  title: string;
+  content: string[];
+};
+
 type Saint = {
   id: number;
   name: string;
   img_galery: string;
   img: string;
   prayers: Prayer[] | null;
-  testament: string | null;
+  testament: Testament | null | undefined;
   quotes: string[] | null;
 };
 
 type SaintsContextType = {
-  saintsData: Saint[];
+  enrichiedSaintsData: Saint[];
 };
 
 const saintsData: Saint[] = [
@@ -42,7 +48,7 @@ const saintsData: Saint[] = [
     img_galery: remi_image_galery,
     img: remi_big,
     prayers: null,
-    testament: saintRemiTestament,
+    testament: null,
     quotes: ["Le Seigneur est mon berger"],
   },
   {
@@ -123,13 +129,18 @@ const saintsData: Saint[] = [
   },
 ];
 
+const enrichiedSaintsData: Saint[] = saintsData.map((saint) => ({
+  ...saint,
+  testament: testamentsParsed.find((t) => t.id === saint.id) || null,
+}));
+
 export const SaintsContextProvider = ({
   children,
 }: {
   children: React.ReactNode;
 }) => {
   return (
-    <SaintsContext.Provider value={{ saintsData }}>
+    <SaintsContext.Provider value={{ enrichiedSaintsData }}>
       {children}
     </SaintsContext.Provider>
   );

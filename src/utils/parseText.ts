@@ -12,7 +12,7 @@ type ObjectParsedTextType = {
 
 function parseText(lines: string[], keyword: string) {
   const list: ObjectParsedTextType[] = [];
-  let currentSection: ObjectParsedTextType | null = null;
+  let currentSection: ObjectParsedTextType | null | undefined = null;
 
   lines.forEach((line) => {
     const trimmed = line.trim();

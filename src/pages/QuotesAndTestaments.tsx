@@ -3,14 +3,14 @@ import { useParams } from "react-router-dom";
 import { useSaints } from "../contexts/SaintsContext";
 
 function QuotesAndTestaments() {
-  const { saintsData } = useSaints();
+  const { enrichiedSaintsData } = useSaints();
   const { id } = useParams<string>();
 
   if (!id) {
     return;
   }
 
-  const saint = saintsData.find(
+  const saint = enrichiedSaintsData.find(
     (saint) => saint.id === Number.parseInt(id, 10),
   );
 
@@ -24,12 +24,11 @@ function QuotesAndTestaments() {
       <h1>{saint.name}</h1>
       {saint.testament ? (
         <>
-          <h2>Testament</h2>
-          {saint.testament.split("/n").map((line) => {
+          <h2>{saint.testament.title}</h2>
+          {saint.testament.content.map((line, index) => {
             return (
-              <React.Fragment key={line}>
-                <p>{line}</p>
-              </React.Fragment>
+              // biome-ignore lint/suspicious/noArrayIndexKey: Static text
+              <p key={index}>{line}</p>
             );
           })}
         </>
