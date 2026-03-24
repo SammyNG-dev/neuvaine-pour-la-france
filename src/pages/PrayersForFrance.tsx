@@ -1,16 +1,18 @@
 import { useParams } from "react-router-dom";
 import { useSaints } from "../contexts/SaintsContext";
 import React from "react";
-import "./PrayersFoFrance.css"
+import "./PrayersFoFrance.css";
 
 function PrayersForFrance() {
   const { id } = useParams<string>();
-  const { saintsData } = useSaints();
+  const { enrichiedSaintsData } = useSaints();
 
   if (!id) {
     return <h1>ID Invalide</h1>;
   }
-  const saint = saintsData.find((s) => s.id === Number.parseInt(id, 10));
+  const saint = enrichiedSaintsData.find(
+    (s) => s.id === Number.parseInt(id, 10),
+  );
 
   return (
     <>
@@ -21,9 +23,10 @@ function PrayersForFrance() {
         return (
           <>
             <h2>{p.title}</h2>
-            {pSplitted.map((line) => {
+            {pSplitted.map((line, index) => {
               return (
-                <React.Fragment key={line}>
+                // biome-ignore lint/suspicious/noArrayIndexKey: Static text
+                <React.Fragment key={index}>
                   <p>{line}</p>
                 </React.Fragment>
               );
