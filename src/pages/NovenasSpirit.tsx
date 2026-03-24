@@ -6,7 +6,7 @@ function NovenasSpirit() {
     <>
       <h1>L'esprit des neuvaines</h1>
       <figure>
-        <img src={priere_remi} alt="" />
+        <img className="novena-spirit-prayer" src={priere_remi} alt="" />
       </figure>
       <p>
         Accroître en nous des liens d’amitié avec notre pays et ces saints :
