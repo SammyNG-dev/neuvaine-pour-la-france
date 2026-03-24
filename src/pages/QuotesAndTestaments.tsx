@@ -1,5 +1,6 @@
 import { useParams } from "react-router-dom";
 import { useSaints } from "../contexts/SaintsContext";
+import "./QuotesAndTestaments.css"
 
 function QuotesAndTestaments() {
   const { enrichiedSaintsData } = useSaints();
@@ -19,7 +20,7 @@ function QuotesAndTestaments() {
 
   return (
     <>
-      <img src={saint.img} alt={saint.name} />
+      <img className="saint-big-image" src={saint.img} alt={saint.name} />
       <h1>{saint.name}</h1>
       {saint.testament ? (
         <>

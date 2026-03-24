@@ -6,5 +6,11 @@
 }
 
 .novena-spirit-prayer {
-    width: 30em
+    width: 30rem
+}
+
+@media screen and (min-width: 1024px) {
+    .novena-spirit-prayer {
+        width: 50rem
+    }
 }

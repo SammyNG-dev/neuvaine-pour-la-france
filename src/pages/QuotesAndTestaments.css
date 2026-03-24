@@ -1,0 +1,10 @@
+.saint-big-image {
+    height: 30rem
+}
+
+@media screen and (min-width: 1024px) {
+    .saint-big-image {
+        height: 40rem;
+    }
+    
+}
